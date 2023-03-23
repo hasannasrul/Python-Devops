@@ -1,16 +1,37 @@
 import os
 
 def fileExtWithSize(extension, directory):
-    for p,s,files in os.walk(directory):
+    # initializing array to store dict objects which contains file info 
+    arr = []
+
+    # loop through all dirs
+    for path,subdir,files in os.walk(directory):
+        # because files is array so looping
         for file in files:
+            # checking if file endswith mentioned extension
             if file.endswith(extension):
-                print(f'file = {file}, Path = {p}')
-                filePath = os.path.join(p,file)
+                #initiating dict to storew details of filename,path,size
+                dict = {}
+                # storing filename in dict object 
+                dict['filename'] = file 
+                # storing path of above file
+                dict['path'] = path 
+                # calculating size
+                filePath = os.path.join(path,file)
                 size = os.path.getsize(filePath)
-                print(f'File size is: {size} Byte')
+                # storing file size
+                dict['size'] = size
+                # Adding dict object to array
+                arr.append(dict)
+    return arr
 
 if __name__=='__main__':
     ext = input('Enter File Extension: ')
     dirc = input('Enter Folder name: ')
     
-    fileExtWithSize(ext,dirc)
+    arrOfDict = fileExtWithSize(ext,dirc)
+    for doc in arrOfDict:
+        print("filename = " + doc['filename'])
+        print("path = " + doc['path'])
+        print("size = " + str(doc['size']) + " Byte")
+        print("\n")
