@@ -1,5 +1,6 @@
 import os
 
+# finds all file with given extension and its size as well
 def fileExtWithSize(extension, directory):
     # initializing array to store dict objects which contains file info 
     arr = []
