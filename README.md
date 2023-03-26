@@ -7,7 +7,7 @@ Python and Scripts for Devops/Platform/SRE Engineering
 ``` pip install -r requirements.txt ```
 
 ### Environment Variables used
-*Assign values to environment variables according to your case *
+*Assign values to environment variables according to your case*
 
 ```
 EC2HOSTNAME=<ip address of your remote Linux server>
