@@ -2,3 +2,4 @@ pandas
 paramiko
 openpyxl
 PyGithub
+boto3

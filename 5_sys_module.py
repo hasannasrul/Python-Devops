@@ -1,7 +1,7 @@
 import sys
 
 '''
->>  Note: It has nothing to do with your nderlting OS. It is used to manipulate 
+>>  Note: It has nothing to do with your underlying OS. It is used to manipulate 
           your Python runtime environment.
           important function below
             sys.version

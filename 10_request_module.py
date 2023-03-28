@@ -33,4 +33,3 @@ headers = {"Authorization": "token {0}".format(token)}
 data = {"name": "{0}".format(reponame)}
 r = requests.delete("{0}repos/{1}/{2}".format(GITHUB_API_URL,username, reponame), headers=headers)
 print(r)
-

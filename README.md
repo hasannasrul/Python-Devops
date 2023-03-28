@@ -15,4 +15,7 @@ GITUHB_TOKEN=<Token generated from github>
 GMAIL_APP_PASSWORD=<App password generated after enabling 2FA on gmail for connection purpose>
 SMTP_SERVER=<your server name (for eg, smtp.gmail.com)>
 SMTP_PORT=<port in which your smtp is listening ( default 587 for gmail )>
+AWS_ACCESS_KEY_ID=<Your aws access key id>
+AWS_SECRET_ACCESS_KEY=<You AWS secret access key>
+AWS_ACCOUNT_ID=<Your AWS account id>
 ```
