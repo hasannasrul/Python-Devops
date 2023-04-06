@@ -18,9 +18,9 @@ with open(os.path.join(os.getcwd(),'Scripts','logs.csv')) as attachment:
     message.attach(part)
 
 # Email header
-message['From'] = "hasanali242424@gmail.com"
+message['From'] = "Malike Ashtar hasanali242424@gmail.com"
 message['To'] = "hasanali50923@gmail.com"
-message['Subject'] = "Python Devops - SMTP Module "
+message['Subject'] = "Python Alias Changed - SMTP Module "
 
 # Smtp server
 smtp_server = os.environ.get('SMTP_SERVER')
